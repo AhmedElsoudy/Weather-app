@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/all.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Contact</title>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg p-4">
+        <div class="container">
+          <a class="navbar-brand d-flex text-white" href="#">
+            <img src="logo.png" alt="weather">
+            <div class="ps-2">
+              <h1 class="mb-1">Weather</h1>
+              <p class="m-0">tagline goes here</p>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="contact-sec pt-5 pb-5">
+        <div class="container pt-5">
+          <div class="row g-5">
+            <div class="col-md-6 ">
+              <div class="layer  contact-frame p-4 rounded-4 shadow-sm">
+                <iframe class="w-100 rounded-3 mb-4" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d27628.787945417647!2d${position.coords.longitude}!3d${position.coords.latitude}!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1704648149440!5m2!1sar!2seg" style="border:0; height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-marker me-2"></i>
+                    <div>
+                      <p class="m-0 fs-14">Company Name INC.</p>
+                      <p class="m-0 fs-14">2803 Avenue Street, Los Angeles</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-phone me-2"></i>
+                    <p class="fs-14 m-0">+1 800 314 235</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <p class="fs-14 m-0">contact@companyname.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="layer ">
+                <h2 class="text-white fw-normal">Contact us</h2>
+                <p class="fs-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="layer">
+                      <input class="form-control  rounded-4 input-contact" type="text" placeholder="Your name...">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="layer">
+                      <input class="form-control  rounded-4 input-contact" type="email" placeholder="Email Addresss...">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="layer">
+                      <input class="form-control  rounded-4 input-contact" type="text" placeholder="Company name...">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="layer">
+                      <input class="form-control  rounded-4 input-contact" type="url" placeholder="Website...">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="layer">
+                      <textarea class="form-control  rounded-4 input-contact" name="" id="" cols="30" rows="10" placeholder="Message..." style="resize: none;"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-info text-white mt-3">Submit</button>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class=" col-md-6">
+          <div class="search form-control mb-5 rounded-5 d-flex justify-content-between ">
+          <input class="form-control border-0 shadow-none " type="text" placeholder="Enter your email to subscribe...">
+          <button class="btn btn-primary rounded-5">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="d-flex  footer-links justify-content-md-end p-0">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-google"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+          </div>
+        <p class="text-primary text-center">Copyright 2024 Company name. Designed by Gom3a. All rights reserved</p>
+        </div>
+      </footer>
+</body>
+</html>

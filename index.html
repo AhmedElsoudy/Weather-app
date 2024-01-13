@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/all.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg p-4 shadow">
+		<div class="container">
+		  <a class="navbar-brand d-flex text-white" href="#">
+			<img src="logo.png" class="w-25" alt="weather">
+			<div class="ps-2">
+			  <h1 class="mb-1 ">Weather</h1>
+			  <p class="m-0">tagline goes here</p>
+			</div>
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa-solid fa-bars text-white"></i>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">News</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Live Cameras</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Photos</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+  </nav>
+  <section class="weather-body">
+  <div class="container">
+    <div class="search form-control mb-5 rounded-5 d-flex justify-content-between">
+    <input class="form-control border-0 shadow-none " type="text" placeholder="Enter your location..." id="btn">
+    <button class="btn btn-primary rounded-5" id="search">Weather</button>
+    </div>
+    <div class="row g-4" id="row">
+      <div class="col-md-4" id="today">
+        <div class="inner bg-info rounded-4 p-3">
+          <div class="card-head  d-flex justify-content-between text-primary">
+            <div>
+              <p id="day">Friday</p>
+            </div>
+            <div class="date d-flex align-items-start p-0 ">
+              <p id="dayNum" class="px-1">12</p>
+              <p id="month">January</p>
+            </div>
+            
+          </div>
+          <div class="card-content">
+            <h2 id="city"> Cairo</h2>
+            <div>
+              <span class="display-1 " id="temp">19&deg;C</span>
+              <img src="116.webp" id="tempImg" class="px-2" alt="">
+            </div>
+            <p class="text-primary" id="tempText">Partly cloudy</p>
+          </div>
+          <div class="card-footer text-center p-2">
+            <span class="item1 p-2">
+              <i class="fa-solid fa-umbrella fs-5"></i>
+              <span id="humidity" class="fs-6"> 20<span>%</span></span>
+            </span>
+            <span class="item2 p-2">
+              <i class="fa-solid fa-wind fs-5"></i>
+              <span id="wind" class="fs-6">18km/h</span>
+            </span>
+            <span class="item3 p-2">
+              <i class="fa-solid fa-compass fs-5"></i>
+              <span id="windDirection" class="fs-6">East</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="inner bg-info rounded-4 p-3">
+          <div class="card-header">
+            <p class="text-center text-primary next-day">Saturday</p>
+          </div>
+          <div class="card-content d-flex flex-column align-items-center">
+            <img src="113.webp"  class="w-25 next-img" alt="">
+            <span class="display-4 next-max-temp" >20.9&deg;C</span>
+            <span class="fs-3 next-min-temp"  >11.2&deg;</span>
+          </div>
+          <div class="card-footer">
+            <p class="text-center text-primary next-day-text" >Sunny</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="inner bg-info rounded-4 p-3">
+          <div class="card-header">
+            <p class="text-center text-primary next-day">Saturday</p>
+          </div>
+          <div class="card-content d-flex flex-column align-items-center">
+            <img src="176.webp" class="w-25 next-img" alt="">
+            <span class="display-4 next-max-temp">17.4&deg;C</span>
+            <span class="fs-3 next-min-temp">12.6&deg;</span>
+          </div>
+          <div class="card-footer">
+            <p class="text-center text-primary next-day-text">Patchy rain possible</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </section>
+  <footer>
+  <div class="container">
+    <div class="row">
+    <div class=" col-md-6">
+    <div class="search form-control mb-5 rounded-5 d-flex justify-content-between ">
+    <input class="form-control border-0 shadow-none " type="text" placeholder="Enter your email to subscribe...">
+    <button class="btn btn-primary rounded-5">Subscribe</button>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <ul class="d-flex  footer-links justify-content-md-end p-0">
+    <li><i class="fa-brands fa-facebook"></i></li>
+    <li><i class="fa-brands fa-twitter"></i></li>
+    <li><i class="fa-brands fa-google"></i></li>
+    <li><i class="fa-brands fa-youtube"></i></li>
+    </ul>
+  </div>
+    </div>
+  <p class="text-primary copy-right text-center">Copyright 2024 Company name. Designed by Gom3a. All rights reserved</p>
+  </div>
+  </footer>
+    <script src="logic/bootstrap.bundle.min.js"></script>
+    <script src="logic/logic.js"></script>
+  </body>
+</html>
